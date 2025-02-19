@@ -12,7 +12,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    cursor: url(./crsr.png) auto;
     font-family: 'dudu';
     display: flex;
 }
@@ -44,4 +43,23 @@ h3{
 
 p{
     margin: 15px;
+}
+
+footer{
+    margin: 10px 0;
+    display: flex;
+}
+
+a, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+    font-size:large;
+    display: flex;
+    align-items: center;
+}
+
+a img{
+    margin-right: 5px;
+    width: 18px;
 }
