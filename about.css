@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'dudu';
+    src: url(font/Dudu_Calligraphy.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {cursor: url(https://cur.cursors-4u.net/toons/too-5/too419.cur), auto !important;} 
+
+body{
+    background: url(img/partnerintime.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'dudu';
+    display: flex;
+}
+
+main{
+    background-color: white;
+    border: 5px solid black;
+    margin: 0 auto;
+    width: 400px;
+}
+
+a, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+    font-size:large;
+    display: flex;
+    align-items: center;
+}
+
+a img{
+    margin-right: 5px;
+    width: 18px;
+}
