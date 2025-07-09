@@ -8,12 +8,53 @@
     <link rel="stylesheet" href="index.css">        
 </head>
 <body>
+    <div class="player">
+        <div class="window">
+            <div class="title-bar">
+            <div class="title-bar-text"><sub><img class="titlebaricon" src="./img/player.png" alt=""></sub> CD player</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+            </div>
+            <div class="window-body">
+                <div class="flex">
+                    <div id="imagestyle"><img class="ic" src="./img/kotone.jpg" alt=""></div>
+                    <div id="musicplayer">
+                        <div class="songtitlewindow">
+                            <div class="flex"><marquee scrollamount="4" class="songtitle"></marquee><div class="songtitlearrow"></div></div>
+                        </div>
+                        <div class="seeking">
+                            <div class="current-time">00:00</div>
+                            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                            <div class="total-duration">0:00</div>
+                        </div>
+                        <table class="controls">
+                            <tr>
+                                <td>
+                                    <div class="prev-track" onclick="prevTrack()"><button><img src="./img/pre.png" class="controlimg"></button></div>
+                                </td>
+                                <td>
+                                    <div class="playpause-track" onclick="playpauseTrack()" ><button><img src="./img/play.png" class="controlimg"></button></div>
+                                </td>
+                                <td>
+                                    <div class="next-track" onclick="nextTrack()"><button><img src="./img/next.png" class="controlimg"></button></div>
+                                </td>
+                            </tr>
+                        </table>
+                    <audio id="music" src=""></audio> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <header> 
             <img src="img/bw.jpeg" alt="" id="header">
             <img src="img/pfp.jpg" alt="" id="icon">
             <span id="tag">@arcadiabae</span>
-            <span id="info">zeynep | 19 | she/her</span>
+            <span id="info">zeynep | 20 | she/her</span>
             <div id="blinkies">
                 <img class="blinkie" src="BlinkiesStamps/laundry.gif" alt="">
                 <img class="blinkie" src="BlinkiesStamps/mimimimi.webp" alt="">
@@ -57,7 +98,7 @@
                     <br>
                     ⊹₊ ˚‧︵‿₊୨୧₊‿︵‧ ˚ ₊⊹ <br>
                     creation: dec 19 2024 <br>
-                    last updated: march 22 2025
+                    last updated: june 16 2025
                 </p>
             </article>
         </div>
@@ -87,6 +128,7 @@
 
     <script src="visitor.js"></script>
     <script src="crsr.js"></script>
-    <script src="calendar.js"></script>
+    <script>player.js</script>
+    <script>calendar.js</script>
 </body>
 </html>
